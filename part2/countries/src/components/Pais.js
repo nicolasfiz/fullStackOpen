@@ -4,6 +4,7 @@ import Weather from './Weather';
 
 const Pais = ({ pais }) => {
     const [res, setRes] = useState([]);
+    console.log(pais);
     console.log(`http://api.weatherstack.com/current?access_key=${process.env.REACT_APP_API_KEY}&query=${pais.capital[0]}`)
     useEffect(() => {
         console.log('tiempo')
